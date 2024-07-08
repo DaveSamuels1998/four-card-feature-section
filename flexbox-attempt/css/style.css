@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200&display=swap');
+
+
+:root{
+
+  /* translating 1440px would be better */
+  --primary-red: hsl(0, 78%, 62%);
+  --primary-cyan:  hsl(180, 62%, 55%);
+  --primary-orange: hsl(34, 97%, 64%);
+  --primary-blue: hsl(212, 86%, 64%);
+  --ff-sans: "Poppins";
+  
+  /* Neutral colors */
+  --clr-netural-900: hsl(234, 12%, 34%);
+  --clr-netural-400: hsl(229, 6%, 66%);
+  --clr-netural-100: hsl(0, 0%, 98%);
+
+
+  /* Font weight  */
+  --fw-light: 200;
+  --fw-normal: 400;
+  --fw-bold: 600;
+
+  --fs-400: 1rem;
+  --fs-500: 1.25rem;
+  --fs-600: 1.625rem;
+  --fs-900: 2.5rem;
+ 
+ }
+
+ *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+ }
+
+ html {
+  /* Never limit the width of your body element in HTML. Do not put a max-width on it. If you set a max-width for your main/section tag, using margin-inline on the body tag to make everything centered.*/
+  font-family: var(--ff-sans);
+  color: var(--clr-netural-400);
+  font-weight: var(--fw-normal);
+  line-height: 1.7;
+  
+ 
+  /* adds space on the bottom of the webpage for our footer. */
+ }
+
+h1, h2, h3 {
+  color: var(--clr-netural-900);
+  line-height: 1.2;
+}
+
+header {
+  text-align: center;
+  margin-block: 6rem;
+}
+.primary-header {
+  font-weight: var(--fw-light);
+  font-size: var(--fs-900);
+ }
+ 
+ h1 {
+  color: var(--clr-netural-400);
+  font-weight: var(--fw-light);
+  font-size: var(--fs-900);
+  margin-bottom: 2rem;
+ }
+ h1 span{
+  color: var(--clr-netural-900);
+  font-weight: var(--fw-bold);
+
+ 
+ }
+
+ header > p {
+  font-size: var(--fs-500);
+ }
+
+
+ .wrapper{
+  padding-inline: 2rem;
+  max-width: 1100px;
+  margin-inline: auto;
+  
+  /* margin-inline means the left and right margin only. */
+ 
+  
+ }
+
+ .wrapper-narrow {
+  max-width: 550px;
+ }
+
+
+ body {
+  margin: 0;
+  margin-block-end: 5rem;
+ }
+ 
+ 
+
+.header-info {
+  font-size: var(--fs-500);
+}
+
+ .layout-grid {
+  --gap: 2rem;
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+
+ }
+ 
+ .layout-grid > * {
+  flex: 1;
+  /* Anything that is a direct descendent of "layout-grid" will have a flex of 1 */
+ }
+
+
+ .col {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  gap: var(--gap);
+  border: 3px blue solid;
+ }
+ 
+
+
+
+ .card{
+  padding: 2rem;
+  box-shadow: 0 1rem 1.5rem -0.5rem rgba(0 50 100 / 0.15);
+  /*max-width: 27rem;
+  height: 18.75rem; */
+ }
+ 
+ .card-header {
+  font-size: var(--fs-600);
+  margin: 0;
+ }
+ .team-builder{
+  border-top: 4px solid var(--primary-red);
+  /*   margin-bottom: 3rem; 
+       This is correct but we will use grid to get the space between the card team-builder and karma. */
+ }
+ .karma{
+ 
+  border-top: 4px solid var(--primary-orange);
+ }
+
+ .supervisor {
+  
+  border-top: 4px solid var(--primary-cyan);
+ }
+
+
+  
+  
+   .calculator {
+    
+    border-top: 4px solid var(--primary-blue);
+   }
+ 
+   .card_img {
+    display: block;
+    margin-left: auto;
+    /* margin-left: auto; means all of the margin goes to the left. */
+    margin-top: 2rem;
+   }
